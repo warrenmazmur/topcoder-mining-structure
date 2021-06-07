@@ -1,9 +1,10 @@
 import { useState } from "react";
 
 import "./styles.scss";
+import Button from "../Button";
 
 function MineSiteInput() {
-  const [names] = useState([""]);
+  const [names, setNames] = useState([""]);
 
   return (
     <div className="mine-site-input">
@@ -14,10 +15,18 @@ function MineSiteInput() {
           <input
             type="text"
             id={`ore${index + 1}`}
+            defaultValue = {val}
           />
         </div>
       ))}
+      
+      <Button 
+        id='addMoreButton' 
+        value='Add More' 
+        handleClick={() => setNames(prevNames => [...prevNames, ""])}
+      />
     </div>
+    
   );
 }
 
