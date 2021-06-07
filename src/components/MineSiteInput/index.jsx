@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./styles.scss";
 import Button from "../Button";
 
-function MineSiteInput() {
+function MineSiteInput(props) {
   const [names, setNames] = useState([""]);
 
   return (
