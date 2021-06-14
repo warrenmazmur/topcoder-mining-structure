@@ -23,7 +23,7 @@ function MineSiteInput(props) {
       <Button 
         id='addMoreButton' 
         value='Add More' 
-        handleClick={() => setNames(prevNames => [...prevNames, ""])}
+        handleClick={() => setNames(prevNames => [prevNames, ""])}
       />
     </div>
     
