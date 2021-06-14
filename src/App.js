@@ -6,7 +6,7 @@ import MineSiteOverview from "./components/MineSiteOverview";
 import "./App.scss";
 
 function App() {
-  const [names, setNames] = useState(["kerbau", "macan", "ayam", "zebra"]);
+  const [names, setNames] = useState([]);
 
   return (
     <div className="app">
@@ -20,7 +20,7 @@ function App() {
             />
           </Route>
           <Route path='/overview'>
-            <MineSiteOverview names={names}/>
+            <MineSiteOverview names={names}/>    
           </Route>
         </Switch>
       </BrowserRouter>
